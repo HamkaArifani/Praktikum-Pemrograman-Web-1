@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Membuat Form Pendaftaran</title>
+</head>
+<body>
+    <form>
+        <table border="3" align="center" width="500">
+            <tr bgcolor="lightskyblue" style="height:70">
+                <th style="color: red; font-family: arial">
+                    <h1>Pendaftaran Khusus</h1>
+                </th>
+            </tr>
+            <tr bgcolor="grey">
+                <td align="left" style="font-family: arial; ">
+                    <h2 style="font-family: Times New Roman;">Data Diri</h2>
+                    <table>
+                        <tr>
+                            <td style="font-family: Times New Roman;">Nama</td>
+                            <td><input type="text" style="width: 200px;" name="Nama"></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: Times New Roman;">Nim</td>
+                            <td><input type="text" style="width: 200px;" name=NIM></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: Times New Roman;">E-mail</td>
+                            <td><input type="email" style="width: 200px;" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: Times New Roman;">Tanggal Lahir</td>
+                            <td><input type="text" style="width: 180px;" placeholder="hh/bb/tttt" name="TL"></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family:Times New Roman;">Jenis Kelamin</td>
+                            <td>
+                                <input type="radio" name="jenis_kelamin" value="L"> Laki-laki<br>
+                                <input type="radio" name="jenis_kelamin" value="P"> Perempuan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family:Times New Roman;"> Pilih Program Khusus</td>
+                            <td><input type="checkbox" value="C#" name="C#">C#<br>
+                                <input type="checkbox" value="Java" name="Java">Java<br>
+                                <input type="checkbox" value="SQL" name="SQL">SQL<br>
+                                <input type="checkbox" value="HTML dan PHP" name="HTMLPHP">HTML dan PHP<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;font-family:Times New Roman;">Pilih Hari/Jam Kursus</td>
+                            <td>
+                                <select name="Hari/Jam Kursus" style="margin-bottom: 70px;">
+                                    <option value="Senin-Rabu">Senin-Rabu/09.00 - 11.00</option>
+                                    <option value="Kamis-Sabtu">Kamis-Sabtu/08.00 - 10.00</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr bgcolor="salmon">
+                <td style="padding: 5px; font-family:Times New Roman">
+                    Komentar Anda<br>
+                    <textarea name="komentar" rows="4" cols="60"></textarea><br><br>
+                    <input type="reset" value="Reset" name="Reset">
+                    <input type="submit" value="Submit" name="Submit">
+                    <input type="button" value="Cancel" name="Cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
