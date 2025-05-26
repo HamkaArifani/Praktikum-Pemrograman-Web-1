@@ -1,0 +1,26 @@
+<html>
+<body>
+
+    <p>Klik tombol berikut untuk menampilkan konfirmasi</p>
+
+    <button onclick="myfunction()">Klik Disini</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myfunction()
+        {
+            var x;
+
+            var nama=prompt("Silahkan masukkan nama anda","Hamka Arifani");
+
+            if (nama!= null)
+            {
+                x="Selamat Datang ! " +nama+ " bagaimana kabar Anda hari ini?";
+                document.getElementById("demo").innerHTML=x;
+            }
+        }
+    </script>
+
+</body>
+</html>
